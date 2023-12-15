@@ -1,5 +1,5 @@
 # OliasMoralesE01
-Ejercicio 1 de Multimedia con Android Studio
+### Ejercicio 1 de Multimedia con Android Studio
 
 Este ejercicio se enfoca en el aprendizaje de la parte frontal de la aplicación de manera que no tiene funcionalidad
 Hemos aprendido a utilizar distintos layouts y editar el formato de cada uno de los componentes tanto su diseño como sus tamaños
