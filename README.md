@@ -17,7 +17,7 @@ con la finalidad que cada uno de los componentes de la aplicación seán mobile 
 
 ### Imagen de Proyecto Final
 
-![image](https://github.com/Javi-23/OliasMoralesE01/assets/102307312/c11f1440-65de-4a7c-953a-11b3017841e6){width='100px'}
+![image](https://github.com/Javi-23/OliasMoralesE01/assets/102307312/c11f1440-65de-4a7c-953a-11b3017841e6)
 
 
 
