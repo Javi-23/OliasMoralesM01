@@ -39,7 +39,7 @@ en el TextView de la parte de abajo de la misma aparezca el nombre
 ## Segunda pantalla 
 ![image](https://github.com/Javi-23/OliasMoralesM01/assets/102307312/4aa2942e-3515-4772-a08e-9f24b250294a)
 
-## Lógica de boton de Login 
+## Lógica Ventana De Login 
 ![image](https://github.com/Javi-23/OliasMoralesM01/assets/102307312/712fe900-30d6-4eec-9190-d43d6c7fcc27)
 
 ![image](https://github.com/Javi-23/OliasMoralesM01/assets/102307312/cd7ff25e-0023-44b0-a4a2-471c3b3ca9c3)
