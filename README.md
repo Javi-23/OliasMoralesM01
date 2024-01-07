@@ -1,4 +1,4 @@
-# OliasMoralesE01
+# OliasMoralesM01
 # Ejercicio 1 de Multimedia con Android Studio ✔📱
 
 Este ejercicio se enfoca en el aprendizaje de la parte frontal de la aplicación de manera que no tiene funcionalidad
