@@ -26,6 +26,7 @@ Crea la segunda pantalla en el mismo proyecto(investiga como). Deberás realizar
 
 ## Pantalla De Login
 ![image](https://github.com/Javi-23/OliasMoralesM01/assets/102307312/d61e9b5d-391a-4d66-84ef-36ed4318af7b)
+
 Esta pantalla tiene un propósito la cual actua como logger de manera que si introducimos las credenciales correctas pasará a la siguiente pantalla, pero
 si las credenciales son incorrectas saltara un error el cual nos sugiere un error de acceso
 
@@ -51,7 +52,7 @@ en el TextView de la parte de abajo de la misma aparezca el nombre
 
 ![image](https://github.com/Javi-23/OliasMoralesM01/assets/102307312/88dfd812-2802-478a-b2fa-50b5e09bb6d1)
 
-Se ha optado por una estructura el cual se posicionan todos los elementos con constraint layout a excepcion de los Plain texts del usuario y contraseña que estos se han introducido en un linearLayout de manera que uno este debajo de otro con un pequeño margen entre ellos. (Podría haberlo metido todo en el linear Layout, para que los elementos esten unos debajos de otros pero se ha optado por esta estructurar para no excederme con margenes entre los elementos).
+Se ha optado por una estructura el cual se posicionan todos los elementos con constraint layout de manera que los elementos seran responsive a excepcion de los Plain texts del usuario y contraseña que estos se han introducido en un linearLayout de manera que uno este debajo de otro con un pequeño margen entre ellos. (Podría haberlo metido todo en el linear Layout, para que los elementos esten unos debajos de otros pero se ha optado por esta estructurar para no excederme con margenes entre los elementos), el linear layout también se ha posicionado con ConstratintLayout.
 
 
 
