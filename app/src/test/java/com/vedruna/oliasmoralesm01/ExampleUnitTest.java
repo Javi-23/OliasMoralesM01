@@ -1,4 +1,4 @@
-package com.vedruna.oliasmoralese01;
+package com.vedruna.oliasmoralesm01;
 
 import org.junit.Test;
 

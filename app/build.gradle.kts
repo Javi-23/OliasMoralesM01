@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.vedruna.oliasmoralese01"
+    namespace = "com.vedruna.oliasmoralesm01"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.vedruna.oliasmoralese01"
+        applicationId = "com.vedruna.oliasmoralesm01"
         minSdk = 21
         targetSdk = 34
         versionCode = 1
