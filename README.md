@@ -108,7 +108,9 @@ Elemento Exit:
 
 ![image](https://github.com/Javi-23/OliasMoralesM01/assets/102307312/a77a2808-2fb2-4692-8ef2-8bbbbd0b877c)
 
+
 **nav_graph**
+
 En este elemento definiremos los diferentes fragment por el cual va a navegar nuestra aplicación
 Es importante darle un id a cada uno de los fragment, puesto que es el elemento que se va a utilizar
 para reconocer el fragment.
