@@ -111,7 +111,7 @@ Elemento Exit:
 
 **nav_graph**
 
-En este elemento definiremos los diferentes fragment por el cual va a navegar nuestra aplicación
+En este elemento definiremos los diferentes fragment por el cual va a navegar nuestra aplicación. 
 Es importante darle un id a cada uno de los fragment, puesto que es el elemento que se va a utilizar
 para reconocer el fragment.
 
