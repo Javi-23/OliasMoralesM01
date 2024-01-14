@@ -115,7 +115,7 @@ para reconocer el fragment.
 
 ![image](https://github.com/Javi-23/OliasMoralesM01/assets/102307312/33cf48e5-07c7-4335-8fb3-9fed4f22deb4)
 
-## Logíca de navegación código Java
+## Logíca de navegación código Java (Activity)
 
 ```
 public class ActivityNav extends AppCompatActivity {
