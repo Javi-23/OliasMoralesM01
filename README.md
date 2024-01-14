@@ -161,7 +161,7 @@ public class ActivityNav extends AppCompatActivity {
 }
 ```
 
-![Running Devices - OliasMoralesM01 2024-01-14 18-26-51](https://github.com/Javi-23/OliasMoralesM01/assets/102307312/76b7e921-3b5f-4e79-a6a6-82a5746e0acc)
+![Running Devices - OliasMoralesM01 2024-01-14 18-26-51](https://github.com/Javi-23/OliasMoralesM01/assets/102307312/76b7e921-3b5f-4e79-a6a6-82a5746e0acc){width=50%}
 
 
 
