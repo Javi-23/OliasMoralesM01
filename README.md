@@ -61,7 +61,7 @@ Cambia el proyecto para que el segundo activity en vez de ser el contador sea un
 
 ## Creación de FrameLayout
 
-** FragmentContainerView: ** 
+**FragmentContainerView:** 
 
 - Es un contenedor para alojar fragmentos, en este caso, un NavHostFragment que se utiliza para la navegación.
 - Se le asigna un ID (fragment_Root).
@@ -72,7 +72,7 @@ Cambia el proyecto para que el segundo activity en vez de ser el contador sea un
 - ![image](https://github.com/Javi-23/OliasMoralesM01/assets/102307312/f16f3a8a-a963-4352-b56a-6b7c9920d3aa)
 
   
-** BottomNavigationView:
+**BottomNavigationView:**
 
 - Es un componente de interfaz de usuario de Material Design que generalmente se usa para la navegación entre secciones de la aplicación.
 - Se le asigna un ID (bottomNavigation).
@@ -82,7 +82,7 @@ Cambia el proyecto para que el segundo activity en vez de ser el contador sea un
 - Se conecta mediante restricciones a la parte inferior, izquierda, derecha y superior del ConstraintLayout.
 - Se asocia con un menú de navegación definido en el archivo de recursos de menú (@menu/bottom_navigation_menu).
 - 
-** bottom_navigation_menu
+**bottom_navigation_menu**
   
 Elemento Home:
 - ID: navigation_home
@@ -108,7 +108,7 @@ Elemento Exit:
 
 ![image](https://github.com/Javi-23/OliasMoralesM01/assets/102307312/a77a2808-2fb2-4692-8ef2-8bbbbd0b877c)
 
-** nav_graph
+**nav_graph**
 En este elemento definiremos los diferentes fragment por el cual va a navegar nuestra aplicación
 Es importante darle un id a cada uno de los fragment, puesto que es el elemento que se va a utilizar
 para reconocer el fragment.
