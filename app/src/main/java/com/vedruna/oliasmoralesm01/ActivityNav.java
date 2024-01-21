@@ -45,6 +45,8 @@ public class ActivityNav extends AppCompatActivity {
                 navController.navigate(R.id.homeFragment);
             } else if (item.getItemId() == R.id.navigation_contador) {
                 navController.navigate(R.id.contadorFragment);
+            } else if (item.getItemId() == R.id.navigation_api) {
+                navController.navigate(R.id.apiFragment);
             } else {
                 // En este caso, navega a un fragmento llamado exitFragment (puedes ajustar este nombre según tu configuración)
                 navController.navigate(R.id.exitFragment);

@@ -11,6 +11,11 @@
         android:title="Contador"
         android:visible="true" />
     <item
+        android:id="@+id/navigation_api"
+        android:icon="@drawable/ic_api"
+        android:title="API"
+        android:visible="true" />
+    <item
         android:id="@+id/navigation_exit"
         android:icon="@drawable/ic_exit"
         android:title="Salir"

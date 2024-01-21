@@ -19,4 +19,9 @@
         android:name="com.vedruna.oliasmoralesm01.ContadorFragment"
         android:label="fragment_contador"
         tools:layout="@layout/fragment_contador" />
+    <fragment
+        android:id="@+id/apiFragment"
+        android:name="com.vedruna.oliasmoralesm01.ApiFragment"
+        android:label="fragment_api"
+        tools:layout="@layout/fragment_api" />
 </navigation>
