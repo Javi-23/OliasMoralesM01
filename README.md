@@ -169,6 +169,99 @@ public class ActivityNav extends AppCompatActivity {
 
 ![Running Devices - OliasMoralesM01 2024-01-14 18-26-51](https://github.com/Javi-23/OliasMoralesM01/assets/102307312/76b7e921-3b5f-4e79-a6a6-82a5746e0acc)
 
+# Ejercicio 4 de Multimedia. Crear un nuevo fragment y que consuma una API-REST ✔📱
+
+## Inyecar dependencias Retro-FIT
+
+![image](https://github.com/Javi-23/OliasMoralesM01/assets/102307312/a3909672-78c6-43e7-81b2-86a795d3c25c)
+
+Las dependencias de Retrofit son necesarias en un proyecto de Android para facilitar la comunicación con servicios web mediante la arquitectura REST 
+
+## Agregar propiedades a Android-Manifest
+
+![image](https://github.com/Javi-23/OliasMoralesM01/assets/102307312/d0fefd03-f3b7-433c-bce3-d72432e9cb87)
+
+Estas propiedades son necesarias en situaciones donde tu aplicación necesita acceso a Internet y, en algunos casos, cuando se está trabajando con conexiones no cifradas. 
+Es importante tener en cuenta la seguridad y, siempre que sea posible, optar por conexiones cifradas mediante el uso de HTTPS para proteger la información sensible transmitida 
+entre la aplicación y el servidor.
+
+## Crear clases Necesarias
+
+![image](https://github.com/Javi-23/OliasMoralesM01/assets/102307312/48da4a60-f35a-4b18-a836-c5b2d3fc7096)
+
+1. CrudInterfaces: define métodos de solicitud HTTP para interactuar con una API REST que maneja productos. En este caso, solo hay un método:
+@GET("product"): Este método solicita todos los productos a través de una solicitud HTTP GET a la ruta "product" de la API. La anotación @GET indica que esta es una solicitud GET.
+Call<List<Product>> getAll(): Este método devuelve un objeto Call que envuelve una lista de objetos Product. La respuesta de la API se maneja asíncronamente mediante este objeto Call.
+
+2. Product: Representa el objeto que en el que vamos a almacenar la respuesta de la api
+   
+3. Constants: Representa la dirección IP de nuestro equipo
+
+## Lógica para consumir la API
+```
+/**
+ * A simple {@link Fragment} subclass.
+ * Use the factory method to create an instance of this fragment.
+ */
+public class ApiFragment extends Fragment {
+
+    private List<Product> products; // Lista para almacenar los productos obtenidos de la API
+    private CRUDInterface crudInterface; // Interfaz para comunicarse con la API y realizar operaciones CRUD
+
+    public ApiFragment() {
+        // Constructor vacío requerido por Fragment
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_api, container, false);
+        // Se podría agregar código relacionado con la interfaz de usuario aquí, si es necesario
+        fetchData(); // Llama al método para desencadenar la solicitud a la red
+        return view;
+    }
+
+    // Método para realizar la solicitud a la API
+    private void fetchData() {
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl(Constants.BASE_URL)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+        crudInterface = retrofit.create(CRUDInterface.class);
+        Call<List<Product>> call = crudInterface.getAll();
+        call.enqueue(new Callback<List<Product>>() {
+
+            @Override
+            public void onResponse(Call<List<Product>> call, Response<List<Product>> response) {
+                if (!response.isSuccessful()) {
+                    Log.e("error ", response.message());
+                    return;
+                }
+                // Se obtiene la lista de productos de la respuesta exitosa
+                products = response.body();
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                    // Si la versión de Android es igual o superior a Nougat, se utiliza forEach para imprimir los productos
+                    products.forEach(p -> Log.i("api  ", p.toString()));
+                }
+            }
+
+            @Override
+            public void onFailure(Call<List<Product>> call, Throwable t) {
+                // Se registra un error en caso de fallo en la solicitud
+                Log.e("Throw err: ", t.getMessage());
+            }
+        });
+    }
+}
+```
+
+## Resultado final
+![image](https://github.com/Javi-23/OliasMoralesM01/assets/102307312/f47f2aaa-f35c-4d1b-a5c6-318ca3e08618)
+
+![image](https://github.com/Javi-23/OliasMoralesM01/assets/102307312/d3c88b59-20a8-4f98-b161-771d47d7002d)
+
+
+
 
 
 
